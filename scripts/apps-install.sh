@@ -6,7 +6,7 @@ apt install --install-suggests --assume-yes gnome-software
 
 
 #installing Mozilla Firefox from PPA
-add-apt-repository --assume-yes ppa:mozillateam/ppa
+add-apt-repository ppa:mozillateam/ppa -y
 apt --assume-yes update
 apt --assume-yes install -t 'o=LP-PPA-mozillateam' firefox
 
@@ -38,7 +38,7 @@ apt install --assume-yes gnome-shell-extensions gnome-tweaks dconf-editor
 
 
 # installing system packages
-apt install --assume-yes git dbus-x11 linux-headers ntfs-3g libfuse2 build-essential python3 python3-pip python3-venv
+apt install --assume-yes git dbus-x11 linux-headers-$(uname -r) ntfs-3g libfuse2 build-essential python3 python3-pip python3-venv
 
 
 # installing terminal software
