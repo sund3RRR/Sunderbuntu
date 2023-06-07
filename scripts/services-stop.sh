@@ -5,4 +5,6 @@ systemctl disable --now cups.service # CUPS Scheduler
 systemctl disable --now fwupd.service # Firmware update daemon
 systemctl disable --now ModemManager.service # Modem Manager
 
+
+# masking services to disable them permanent
 systemctl mask bolt.service colord.service cups-browsed.service cups.service fwupd.service ModemManager.service

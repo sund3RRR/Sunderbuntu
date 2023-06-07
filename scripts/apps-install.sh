@@ -1,9 +1,12 @@
+apt update --assume-yes && apt upgrade --assume-yes
+
+
 # installing gnome-software-center
 apt install --install-suggests --assume-yes gnome-software
 
 
 #installing Mozilla Firefox from PPA
-add-apt-repository ppa:mozillateam/ppa
+add-apt-repository --assume-yes ppa:mozillateam/ppa
 apt --assume-yes update
 apt --assume-yes install -t 'o=LP-PPA-mozillateam' firefox
 
@@ -29,4 +32,14 @@ rm google-chrome-stable_current_amd64.deb
 # installing vlc mediaplayer
 apt install --assume-yes vlc
 
-apt install --assume-yes gnome-shell-extensions gnome-tweaks
+
+# installing gnome configure apps
+apt install --assume-yes gnome-shell-extensions gnome-tweaks dconf-editor
+
+
+# installing system packages
+apt install --assume-yes git dbus-x11 linux-headers ntfs-3g libfuse2 build-essential python3 python3-pip python3-venv
+
+
+# installing terminal software
+apt install --assume-yes htop s-tui inxi bat nala
