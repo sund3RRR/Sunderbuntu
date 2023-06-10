@@ -15,7 +15,10 @@ cd Sunderbuntu
 ```
 ### Run with sudo
 `sudo sh setup.sh`
-
+### One line command
+```
+sudo apt install git && git clone https://github.com/kabachoke/Sunderbuntu.git && cd Sunderbuntu && sudo sh setup.sh
+```
 # Improvements
 
 - All snaps, snap-store and snapd removed fully
